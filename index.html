@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Conversion Calculator</title>
+    <script
+      src="https://kit.fontawesome.com/b6f073fba6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form action="#" class="conversion-container">
+      <h1><i class="fa-solid fa-weight-scale"></i> Weight Calculator</h1>
+
+      <!-- Floating labels in input using bootstrap -->
+      <div class="form-floating mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="num1"
+          placeholder="From"
+          step="any"
+          min="0"
+        />
+        <label for="num1">From Kilogram</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="num2"
+          placeholder="To"
+          step="any"
+          min="0"
+          disabled
+        />
+        <label for="num2" id="num2Label">To</label>
+      </div>
+
+      <!-- using onclick and function for the calculation -->
+      <div class="row">
+        <div class="col-sm-4 col-12 mb-2">
+          <button type="submit" class="conversion-btn" onclick="gram()">
+            Gram
+          </button>
+        </div>
+        <div class="col-sm-4 col-12 mb-2">
+          <button type="submit" class="conversion-btn" onclick="milligram()">
+            Milligram
+          </button>
+        </div>
+        <div class="col-sm-4 col-12">
+          <button type="submit" class="conversion-btn" onclick="metricton()">
+            Metric Ton
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
